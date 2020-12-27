@@ -35,6 +35,7 @@ export default {
     };
   },
   computed: {
+    // eslint-disable-next-line vue/return-in-computed-property
     currentLangName: function() {
       // get the name of lang code
       if (this.currentLangCode === 'en-us') {
