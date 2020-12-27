@@ -104,14 +104,22 @@
             <q-icon name="school" size="sm"></q-icon>
             {{ $t(`title.education`) }}
           </dt>
-          <ul>
-            <li class="content">
-              <q-icon name="account_balance"></q-icon> {{ $t(`profile.uni`) }}
+          <ul class="content">
+            <!-- TODO: v-for list perform-->
             <li>
-              <span class="date">Sept 2019</span>
-              <span class="text-bold">{{ $t(`profile.degree`) }}</span
-              >, {{ $t(`profile.uni`) }}
-              <q-icon name="account_balance"></q-icon>
+              <span class="date">Sept 2019 - {{ $t(`present`) }}</span>
+              <span class="details"
+                ><span class="text-bold">{{ $t(`profile.degree`) }}</span
+                >, {{ $t(`profile.uni`) }}
+                <q-icon name="account_balance"></q-icon
+              ></span>
+            </li>
+            <li>
+              <span class="date">Sept 2016</span>
+              <span class="details"
+                ><span class="text-bold">{{ $t(`profile.high`) }}</span
+                >, {{ $t(`profile.highSchool`) }}</span
+              >
             </li>
           </ul>
         </li>
@@ -200,10 +208,15 @@ export default {
       margin-right: 20px
 
 
-//  fix style
+// fix style
 div.context > li > dt > i
   padding-bottom: 3px
 
 div.context > li > ul > li
   margin-left: -10px
+
+// dated details
+div.context > li > ul > li
+  display: grid
+  grid-template-columns: 150px 1000px
 </style>
