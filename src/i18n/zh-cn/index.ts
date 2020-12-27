@@ -3,6 +3,7 @@ export default {
     name: '詹姆斯邦德',
     dept: '软件工程',
     uni: '祖母大学',
+    degree: '本科在读 B.E. 软件工程',
     phone: '联系电话',
     email: '工作邮箱',
     website: '个人博客'

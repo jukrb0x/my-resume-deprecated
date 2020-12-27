@@ -107,6 +107,11 @@
           <ul>
             <li class="content">
               <q-icon name="account_balance"></q-icon> {{ $t(`profile.uni`) }}
+            <li>
+              <span class="date">Sept 2019</span>
+              <span class="text-bold">{{ $t(`profile.degree`) }}</span
+              >, {{ $t(`profile.uni`) }}
+              <q-icon name="account_balance"></q-icon>
             </li>
           </ul>
         </li>
@@ -117,8 +122,8 @@
             <q-icon name="support" size="sm"></q-icon>
             {{ $t(`title.experience`) }}
           </dt>
-          <ul>
-            <li class="content">
+          <ul class="content">
+            <li>
               123
             </li>
           </ul>
@@ -130,8 +135,8 @@
             <q-icon name="science" size="sm"></q-icon>
             {{ $t(`title.research`) }}
           </dt>
-          <ul>
-            <li class="content">
+          <ul class="content">
+            <li>
               12333
             </li>
           </ul>
@@ -176,19 +181,29 @@ export default {
   padding: 25px
   width: 1060px
   box-shadow: 0 3px 18px 2px rgba(0, 0, 0, 0.14), 0 3px 1px -3px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
-.quick-facts
-  display: grid
-  grid-template-columns: 120px 600px
-  margin-bottom: 25px
-  .info
-    .facts
-      font-family: Georgia, "Microsoft Sans Serif"
-      .name
-        font-size: xx-large
-  .contact
-    margin-top: 5px
-    margin-left: -5px
 
+  .quick-facts
+    display: grid
+    grid-template-columns: 120px 600px
+    margin-bottom: 25px
+    .info
+      .facts
+        font-family: Georgia, "Microsoft Sans Serif"
+        .name
+          font-size: xx-large
+    .contact
+      margin-top: 5px
+      margin-left: -5px
+
+  .context
+    .date
+      margin-right: 20px
+
+
+//  fix style
 div.context > li > dt > i
   padding-bottom: 3px
+
+div.context > li > ul > li
+  margin-left: -10px
 </style>
