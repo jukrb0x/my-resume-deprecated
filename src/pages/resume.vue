@@ -109,6 +109,11 @@
         <Research />
       </div>
     </div>
+    <!-- bottom -->
+    <!-- latest update timestamp-->
+    <div class="latest">
+      <Timestamp />
+    </div>
   </q-page>
 </template>
 
@@ -118,9 +123,11 @@ import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Research from '../components/Research';
 import Skills from '../components/Skills';
+import Timestamp from '../components/Timestamp';
 export default {
   mixins: [LangSwitchMixin],
   components: {
+    Timestamp,
     Skills,
     Research,
     Experience,
@@ -168,4 +175,8 @@ export default {
     .contact
       margin-top: 5px
       margin-left: -5px
+.latest
+  display: flex
+  justify-content: center
+  margin-top: 20px
 </style>
