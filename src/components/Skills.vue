@@ -6,10 +6,13 @@
     </dt>
     <ul class="content">
       <li>
-        <b>{{$t(`skills.englishCert`)}}:</b> {{$t(`skills.ielts`)}}
+        <b>{{ $t(`skills.englishCert`) }}:</b> {{ $t(`skills.ielts`) }}
       </li>
       <li>
-        <b>{{$t(`justfine`)}}:</b> {{$t(`skills.programming`)}}
+        <b>{{ $t(`justfine`) }}:</b> {{ $t(`skills.programming`) }}
+      </li>
+      <li>
+        <b>{{ $t(`interest`) }}:</b> {{ $t(`profile.interests`) }}
       </li>
     </ul>
   </li>
