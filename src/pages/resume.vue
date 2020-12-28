@@ -8,7 +8,7 @@
         <div class="profilo">
           <div class="avatar">
             <img
-              src="https://avatars0.githubusercontent.com/u/15688641?s=460&u=96265432bd716f7af56c781d1022078f24bd91ae&v=4"
+              src="~assets/avatar.jpg"
               width="115px"
               alt=""
             />
@@ -172,6 +172,7 @@ export default {
         font-family: Georgia, "Microsoft Sans Serif"
         .name
           font-size: xx-large
+
     .contact
       margin-top: 5px
       margin-left: -5px
