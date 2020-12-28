@@ -7,11 +7,7 @@
         <!-- left -->
         <div class="profilo">
           <div class="avatar">
-            <img
-              src="~assets/avatar.jpg"
-              width="115px"
-              alt=""
-            />
+            <img src="~assets/avatar.jpg" width="115px" alt="" />
           </div>
           <div class="lang-btn">
             <LangSelector
@@ -119,13 +115,14 @@
 
 <script>
 import LangSwitchMixin from '../components/mixins/LangSwitchMixin';
+import ContactInfoMixin from '../components/mixins/ContactInfoMixin';
 import Education from '../components/Education';
 import Experience from '../components/Experience';
 import Research from '../components/Research';
 import Skills from '../components/Skills';
 import Timestamp from '../components/Timestamp';
 export default {
-  mixins: [LangSwitchMixin],
+  mixins: [LangSwitchMixin, ContactInfoMixin],
   components: {
     Timestamp,
     Skills,
@@ -135,13 +132,7 @@ export default {
     LangSelector: () => import('../components/LangSelector.vue')
   },
   data() {
-    return {
-      contact: {
-        tel: '+86 4008-823-823',
-        email: 'james.bond@007.com',
-        website: 'https://wh0.is'
-      }
-    };
+    return {};
   },
   mounted() {
     console.log(this.$i18n);
