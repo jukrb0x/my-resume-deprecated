@@ -99,56 +99,13 @@
 
       <div class="context">
         <!-- Education -->
-        <li class="edu">
-          <dt class="title">
-            <q-icon name="school" size="sm"></q-icon>
-            {{ $t(`title.education`) }}
-          </dt>
-          <ul class="content">
-            <!-- TODO: v-for list perform-->
-            <li>
-              <span class="date">Sept 2019 - {{ $t(`present`) }}</span>
-              <span class="details"
-                ><span class="text-bold">{{ $t(`profile.degree`) }}</span
-                >, {{ $t(`profile.uni`) }}
-                <q-icon name="account_balance"></q-icon
-              ></span>
-            </li>
-            <li>
-              <span class="date">Sept 2016</span>
-              <span class="details"
-                ><span class="text-bold">{{ $t(`profile.high`) }}</span
-                >, {{ $t(`profile.highSchool`) }}</span
-              >
-            </li>
-          </ul>
-        </li>
-
+        <Education />
         <!-- Experience -->
-        <li class="exp">
-          <dt class="title">
-            <q-icon name="support" size="sm"></q-icon>
-            {{ $t(`title.experience`) }}
-          </dt>
-          <ul class="content">
-            <li>
-              123
-            </li>
-          </ul>
-        </li>
-
+        <Experience />
+        <!-- Skills -->
+        <Skills />
         <!-- Research -->
-        <li class="rsch">
-          <dt class="title">
-            <q-icon name="science" size="sm"></q-icon>
-            {{ $t(`title.research`) }}
-          </dt>
-          <ul class="content">
-            <li>
-              123
-            </li>
-          </ul>
-        </li>
+        <Research />
       </div>
     </div>
   </q-page>
@@ -156,9 +113,17 @@
 
 <script>
 import LangSwitchMixin from '../components/mixins/LangSwitchMixin';
+import Education from '../components/Education';
+import Experience from '../components/Experience';
+import Research from '../components/Research';
+import Skills from '../components/Skills';
 export default {
   mixins: [LangSwitchMixin],
   components: {
+    Skills,
+    Research,
+    Experience,
+    Education,
     LangSelector: () => import('../components/LangSelector.vue')
   },
   data() {
@@ -202,21 +167,4 @@ export default {
     .contact
       margin-top: 5px
       margin-left: -5px
-
-  .context
-    .date
-      margin-right: 20px
-
-
-// fix style
-div.context > li > dt > i
-  padding-bottom: 3px
-
-div.context > li > ul > li
-  margin-left: -10px
-
-// dated details
-div.context > li > ul > li
-  display: grid
-  grid-template-columns: 150px 1000px
 </style>
