@@ -10,8 +10,11 @@
         <span class="date">Sept 2019 - {{ $t(`present`) }}</span>
         <span class="details"
           ><span class="text-bold">{{ $t(`profile.degree`) }}</span
-          >, {{ $t(`profile.uni`) }} <q-icon name="account_balance"></q-icon
-        ></span>
+          >,
+          <a class="uni-link" href="http://www.xmu.edu.my/" target="_blank"
+            >{{ $t(`profile.uni`) }} <q-icon name="account_balance"></q-icon
+          ></a>
+        </span>
       </li>
       <li>
         <span class="date">Sept 2016</span>
@@ -30,4 +33,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style lang="sass" scoped>
+a
+  color: black
+a
+  transition: .3s ease
+
+a:hover
+  color: $blue-10
+</style>
