@@ -9,7 +9,7 @@
           <div class="avatar">
             <img
               src="https://avatars0.githubusercontent.com/u/15688641?s=460&u=96265432bd716f7af56c781d1022078f24bd91ae&v=4"
-              width="100px"
+              width="115px"
               alt=""
             />
           </div>
@@ -25,6 +25,7 @@
         <div class="info">
           <div class="facts">
             <div class="name">{{ $t(`profile.name`) }}</div>
+            <div class="motto">{{ $t(`profile.motto`) }}</div>
             <div class="dept">{{ $t(`profile.dept`) }}</div>
             <div class="uni">{{ $t(`profile.uni`) }}</div>
           </div>
@@ -157,7 +158,7 @@ export default {
 
   .quick-facts
     display: grid
-    grid-template-columns: 120px 600px
+    grid-template-columns: 140px 600px
     margin-bottom: 25px
     .info
       .facts

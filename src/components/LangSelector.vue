@@ -1,5 +1,5 @@
 <template>
-  <q-btn-dropdown color="primary" size="sm" :label="currentLangName">
+  <q-btn-dropdown color="primary" size="13px" :label="currentLangName">
     <q-list>
       <q-item
         v-for="lang in langOptions"
