@@ -36,6 +36,3 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-src/i18n/zh-cn/index.ts
-src/i18n/en-us/index.ts
-src/components/mixins/ContactInfoMixin.vue
