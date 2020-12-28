@@ -13,7 +13,7 @@
           }}<a href="https://github.com/FlickerSoul/Graphery/" target="_blank">
             <q-btn flat round color="black" icon="fab fa-github" size="sm">
               <q-tooltip :offset="[10, 10]">
-                Project Repo
+                {{ $t(`ghrepo`) }}
               </q-tooltip>
             </q-btn>
           </a>

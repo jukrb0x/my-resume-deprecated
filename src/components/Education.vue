@@ -17,10 +17,10 @@
         </span>
       </li>
       <li>
-        <span class="date">Sept 2016</span>
+        <span class="date">{{ $t(`profile.highSchool.date`) }}</span>
         <span class="details"
-          ><span class="text-bold">{{ $t(`profile.high`) }}</span
-          >, {{ $t(`profile.highSchool`) }}</span
+          ><span class="text-bold">{{ $t(`profile.highSchool.degree`) }}</span
+          >, {{ $t(`profile.highSchool.schoolName`) }}</span
         >
       </li>
     </ul>
