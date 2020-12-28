@@ -156,7 +156,7 @@ export default {
 
   .quick-facts
     display: grid
-    grid-template-columns: 140px 600px
+    grid-template-columns: 140px 1000px
     margin-bottom: 25px
     .info
       .facts
