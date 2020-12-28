@@ -33,6 +33,6 @@ yarn-error.log*
 *.sln
 
 # fixed data
-src/i18n/en-us/index.ts
-src/i18n/zh-cn/index.ts
-src/components/mixins/ContactInfoMixin.vue
+#src/i18n/en-us/index.ts
+#src/i18n/zh-cn/index.ts
+#src/components/mixins/ContactInfoMixin.vue
