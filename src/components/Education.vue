@@ -4,7 +4,7 @@
       <q-icon name="school" size="sm"></q-icon>
       {{ $t(`title.education`) }}
     </dt>
-    <ul class="content">
+    <ul class="content dated">
       <!-- TODO: v-for list perform-->
       <li>
         <span class="date">Sept 2019 - {{ $t(`present`) }}</span>
