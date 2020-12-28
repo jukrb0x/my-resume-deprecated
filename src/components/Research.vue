@@ -11,7 +11,7 @@
           }}<a href="https://github.com/jukrb0x/my-resume" target="_blank">
             <q-btn flat round color="black" icon="fab fa-github" size="sm">
               <q-tooltip :offset="[10, 10]">
-                Project Repo
+                {{ $t(`ghrepo`) }}
               </q-tooltip>
             </q-btn>
           </a>
@@ -24,7 +24,7 @@
           }}<a href="https://github.com/jukrb0x/Daka" target="_blank">
             <q-btn flat round color="black" icon="fab fa-github" size="sm">
               <q-tooltip :offset="[10, 10]">
-                Project Repo
+                {{ $t(`ghrepo`) }}
               </q-tooltip>
             </q-btn>
           </a>
@@ -37,7 +37,7 @@
           }}<a href="https://github.com/FlickerSoul/Graphery/" target="_blank">
             <q-btn flat round color="black" icon="fab fa-github" size="sm">
               <q-tooltip :offset="[10, 10]">
-                Project Repo
+                {{ $t(`ghrepo`) }}
               </q-tooltip>
             </q-btn>
           </a>
@@ -47,11 +47,14 @@
           }}<a href="https://github.com/FlickerSoul/" target="_blank">
             <q-btn flat round color="black" icon="fas fa-user-circle" size="sm">
               <q-tooltip :offset="[10, 10]">
-                Project Repo
+                {{ $t(`ghrepo`) }}
               </q-tooltip>
             </q-btn>
           </a>
         </span>
+      </li>
+      <li>
+        <span class="proj-name text-bold">{{ $t(`exploring`) }}</span>
       </li>
     </ul>
   </li>
