@@ -13,7 +13,7 @@ export default {
       date: 'Sept 2016',
       schoolName: 'abcde high school'
     },
-    phone: ' Phone Call',
+    phone: 'Phone Call',
     email: 'Working Email',
     website: 'Personal Blog'
   },

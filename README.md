@@ -31,3 +31,4 @@ OUTPUT DIRECTORY: /dist/spa/
 
 - [ ] Mobile responsive design
 - [ ] Quick generate PDF
+
