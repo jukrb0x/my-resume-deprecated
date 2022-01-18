@@ -1,5 +1,7 @@
 # My Résumé (my-resume)
 
+> Outdated and archived.
+
 A resume template made with Vue.js and Quasar framework
 
 # Getting started
